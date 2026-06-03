@@ -1,10 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Shana's World</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎀 Shana's World 🎀</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    margin:0;
+    font-family:'Trebuchet MS',sans-serif;
+    background:linear-gradient(to bottom,#ffd6e8,#fff0f7);
+    text-align:center;
+}
+
+header{
+    background:#ff8fc7;
+    padding:25px;
+    color:white;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+h1{
+    font-size:3rem;
+}
+
+.hero{
+    padding:50px 20px;
+}
+
+.hero img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 0 25px hotpink;
+}
+
+.intro{
+    max-width:800px;
+    margin:auto;
+    font-size:1.2rem;
+    color:#ff4f94;
+}
+
+.nav-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card a{
+    text-decoration:none;
+    color:#ff4f94;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+.contact{
+    padding:50px;
+}
+
+.contact a{
+    display:inline-block;
+    margin:10px;
+    padding:15px 25px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+footer{
+    background:#ffb6d9;
+    color:white;
+    padding:20px;
+    margin-top:50px;
+}
+</style>
+
 </head>
+
 <body>
-  <h1>🎀 Shana's World 🎀</h1>
-  <p>My website is working!</p>
+
+<header>
+    <h1>🎀 Shana's World 🎀</h1>
+    <p>Welcome to my pink little corner of the internet! 💖</p>
+</header>
+
+<section class="hero">
+
+    <!-- Replace later -->
+    <img src="images/shana1.jpg" alt="Shana">
+
+    <h2>Hi! I'm Shana! 💕</h2>
+
+    <p class="intro">
+        I love baking, cooking, playing with my cats, doing nails,
+        deep cleaning, volleyball, and creating projects in AP CSP!
+        Welcome to my personal website where you can learn more about me,
+        explore my projects, meet my cats, discover my favorite music,
+        and find some delicious baking recipes!
+    </p>
+
+</section>
+
+<section class="nav-grid">
+
+    <div class="card">
+        <a href="about.html">💖 About Me</a>
+    </div>
+
+    <div class="card">
+        <a href="resume.html">📄 Resume</a>
+    </div>
+
+    <div class="card">
+        <a href="projects.html">💻 Coding Projects</a>
+    </div>
+
+    <div class="card">
+        <a href="photos.html">📸 Photo Gallery</a>
+    </div>
+
+    <div class="card">
+        <a href="cats.html">🐱 Sushi & Pepper Challenge</a>
+    </div>
+
+    <div class="card">
+        <a href="music.html">🎵 Favorite Songs</a>
+    </div>
+
+    <div class="card">
+        <a href="baking.html">🍰 Baking Recipes</a>
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <h2>💌 Connect With Me!</h2>
+
+    <a href="mailto:viodenicah.limage@ebrooke.org">
+        📧 Email Me
+    </a>
+
+    <a href="https://instagram.com/viviisthebest101" target="_blank">
+        📸 My Instagram
+    </a>
+
+</section>
+
+<footer>
+    <h3>Made with 💖 by Shana</h3>
+</footer>
+
 </body>
 </html>
