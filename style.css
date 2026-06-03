@@ -1,1 +1,56 @@
+body {
+  font-family: Arial;
+  background: #fff0f7;
+  margin: 0;
+  text-align: center;
+}
 
+/* NAV */
+nav {
+  background: #ff8fc7;
+  padding: 10px;
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* PAGES */
+.page {
+  padding: 40px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 70%;
+}
+
+/* CAT IMAGES */
+.cat-img {
+  width: 180px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
