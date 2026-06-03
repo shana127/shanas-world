@@ -34,8 +34,8 @@ function checkCats() {
 
   if (score === 4) {
     createConfetti();
-    alert("🎀 Perfect! You know my cats!");
+    alert("🎀 Perfect! You got them all right!");
   } else {
-    alert("You got " + score + "/4 💕 Try again!");
+    alert("You got " + score + "/4 correct 💕 Try again!");
   }
 }
