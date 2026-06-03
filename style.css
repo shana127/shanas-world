@@ -1,35 +1,65 @@
 body {
-  font-family: Arial;
-  background: #fff0f7;
   margin: 0;
-  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to bottom, #ffd6e8, #fff0f7);
+  color: #ff4f94;
 }
 
 /* NAV */
 nav {
-  background: #ff8fc7;
-  padding: 10px;
+  background: #ff69b4;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
-  margin: 10px;
-  color: white;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 20px;
   text-decoration: none;
+  color: #ff4f94;
   font-weight: bold;
+  transition: 0.2s;
 }
 
-/* PAGES */
-.page {
+nav a:hover {
+  transform: scale(1.1);
+  background: #ffe3f1;
+}
+
+/* PAGE CONTAINER */
+.container {
   padding: 40px;
+  text-align: center;
 }
 
 /* CARDS */
 .card {
   background: white;
-  margin: 15px auto;
   padding: 20px;
-  border-radius: 15px;
-  width: 70%;
+  margin: 15px auto;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4f94;
 }
 
 /* CAT IMAGES */
@@ -37,6 +67,7 @@ nav a {
   width: 180px;
   border-radius: 15px;
   margin: 10px;
+  border: 3px solid pink;
 }
 
 /* CONFETTI */
