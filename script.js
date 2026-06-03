@@ -1,16 +1,6 @@
-// NAVIGATION (only used if you have buttons linking pages dynamically)
-function showPage(pageId) {
-  document.querySelectorAll(".page").forEach(p => {
-    p.style.display = "none";
-  });
-
-  document.getElementById(pageId).style.display = "block";
-}
-
-// CONFETTI 🎀
 function createConfetti() {
-  for (let i = 0; i < 80; i++) {
-    let confetti = document.createElement("div");
+  for (let i = 0; i < 100; i++) {
+    const confetti = document.createElement("div");
     confetti.classList.add("confetti");
 
     confetti.style.left = Math.random() * window.innerWidth + "px";
@@ -25,9 +15,8 @@ function createConfetti() {
   }
 }
 
-// 🐱 CAT GAME CHECK
 function checkCats() {
-  const correctAnswers = {
+  const answers = {
     img1: "sushi",
     img2: "sushi",
     img3: "pepper",
@@ -36,18 +25,17 @@ function checkCats() {
 
   let score = 0;
 
-  for (let key in correctAnswers) {
-    let selected = document.querySelector(`input[name="${key}"]:checked`);
-
-    if (selected && selected.value === correctAnswers[key]) {
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === answers[key]) {
       score++;
     }
   }
 
   if (score === 4) {
     createConfetti();
-    alert("🎀 Perfect! You got them all right!");
+    alert("🎀 Perfect! You know my cats!");
   } else {
-    alert("Try again! You got " + score + "/4 correct 💕");
+    alert("You got " + score + "/4 💕 Try again!");
   }
 }
